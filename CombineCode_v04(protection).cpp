@@ -34,9 +34,9 @@ HardwareSerial Serial1(PC_11 ,PC_10);
 /// 4: Interval 
 uint8_t sendStep = 1;
 int32_t Vout = 0;
-volatile uint8_t sendBit = 0; 
-volatile uint8_t sendByte = 0; 
-volatile uint8_t sendBitIdx = 0; 
+uint8_t sendBit = 0; 
+uint8_t sendByte = 0; 
+uint8_t sendBitIdx = 0; 
 // FSK extra variable
 uint8_t cycle_index = 0;
 
@@ -44,14 +44,14 @@ uint8_t cycle_index = 0;
 /// 1: idle 
 /// 2: receiving 
 /// 3: ending (parity in the future)
-volatile uint8_t receiveStep = 1;
-volatile uint16_t adcValPre = 0;
-volatile uint32_t adcDiff =0;
-volatile uint8_t receiveByte = 0;
-volatile uint8_t receiveBitIdx = 0;
-volatile uint8_t receiveCount =0;
+uint8_t receiveStep = 1;
+uint16_t adcValPre = 0;
+uint32_t adcDiff =0;
+uint8_t receiveByte = 0;
+uint8_t receiveBitIdx = 0;
+uint8_t receiveCount =0;
 // FSK extra variable
-volatile uint8_t prevStamp = 0; 
+uint8_t prevStamp = 0; 
 
 #define WAVEBUFFERLENGTH  50
 #define DACRANGE  230
