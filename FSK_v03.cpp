@@ -149,7 +149,7 @@ void demodulation(){
         receiveCount+=1;
         if(receiveCount>=11){
             // Serial2.println(adcDiff);
-            if(adcDiff>10000){
+            if(adcDiff>10752){
                 receiveByte+=1;
             }
             receiveByte=receiveByte<<1;
